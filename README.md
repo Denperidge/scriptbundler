@@ -17,3 +17,7 @@ Put any amount of shell/batch/powershell scripts in the input directory, run `py
 Bundling multiple scripts of the same type (e.g. .sh/.bat/.ps1) should normally give no issue. However, if you wish to combine (for example) a .sh and a .bat into one .sh script, the bundler will perform some basic translation (in this example prepending cmd.exe before the .bat commands). This is a proof-of-concept feature and primitive at best. For simple uses it should work fine, but do not expect variables etc. to pass flawlessly.
 
 The bundling will work out of the box for any OS, but translating (f.e. combining a ps script and a shell script) is by default configured for a Windows environment. But, with some modification to the templates in convert.py, it shouldn't take too long to let the translator fit your favourite OS.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
